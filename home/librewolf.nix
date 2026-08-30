@@ -16,17 +16,6 @@
           "https://github.com"
           "https://pass.proton.me"
           "https://proton.me"
-          "https://google.com"
-          "https://*.google.com"
-          "https://accounts.google.com"
-          "https://myaccount.google.com"
-          "https://googleusercontent.com"
-          "https://*.googleusercontent.com"
-          "https://gmail.com"
-          "https://mail.google.com"
-          "https://accounts.youtube.com"
-          "https://*.gstatic.com"
-          "https://*.googleapis.com"
         ];
       };
 
