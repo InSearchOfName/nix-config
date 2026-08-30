@@ -17,6 +17,7 @@
     gcc
     gnumake
     zig    
+    SDL2   
 
     vscode
     discord
