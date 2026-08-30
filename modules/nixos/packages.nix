@@ -12,6 +12,7 @@
     zip
     fastfetch
     tree
+    eza
     wireguard-tools
 
     vscode
