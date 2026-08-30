@@ -16,6 +16,7 @@
     wireguard-tools
     gcc
     gnumake
+    zig    
 
     vscode
     discord
