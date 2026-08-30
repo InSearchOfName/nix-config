@@ -14,6 +14,7 @@
     tree
     eza
     wireguard-tools
+    gcc
 
     vscode
     discord
