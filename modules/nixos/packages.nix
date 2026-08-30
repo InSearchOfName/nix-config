@@ -15,6 +15,7 @@
     eza
     wireguard-tools
     gcc
+    gnumake
 
     vscode
     discord
