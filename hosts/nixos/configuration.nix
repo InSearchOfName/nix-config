@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   imports = [
@@ -20,9 +20,9 @@
       settings = {
         "org/gnome/settings-daemon/plugins/power" = {
           sleep-inactive-ac-type = "nothing";
-          sleep-inactive-ac-timeout = 0;
+          sleep-inactive-ac-timeout = lib.gvariant.mkUint32 0;
           sleep-inactive-battery-type = "suspend";
-          sleep-inactive-battery-timeout = 1800;
+          sleep-inactive-battery-timeout = lib.gvariant.mkUint32 1800;
         };
       };
     }
