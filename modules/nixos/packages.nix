@@ -18,6 +18,7 @@
     gnumake
     zig    
     SDL2   
+    typst    
 
     vscode
     discord
