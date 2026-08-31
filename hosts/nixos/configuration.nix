@@ -13,6 +13,25 @@
     ../../modules/nixos/packages.nix
   ];
 
+  programs.dconf.enable = true;
+
+  programs.dconf.profiles.user.databases = [
+    {
+      settings = {
+        "org/gnome/settings-daemon/plugins/power" = {
+          sleep-inactive-ac-type = "nothing";
+          sleep-inactive-ac-timeout = 0;
+          sleep-inactive-battery-type = "suspend";
+          sleep-inactive-battery-timeout = 1800;
+        };
+      };
+    }
+  ];
+
+  services.logind.settings.Login = {
+    HandleLidSwitchExternalPower = "ignore";
+  };
+
   networking.hostName = "nixos";
   system.stateVersion = "26.05";
 }
