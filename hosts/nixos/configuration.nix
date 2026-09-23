@@ -34,4 +34,5 @@
 
   networking.hostName = "nixos";
   system.stateVersion = "26.05";
+  hardware.sane.enable = true;
 }

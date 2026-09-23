@@ -19,6 +19,9 @@
     zig    
     SDL2   
     typst    
+    simple-scan
+    sane-backends
+    racket
 
     vscode
     discord
