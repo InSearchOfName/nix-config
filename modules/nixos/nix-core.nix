@@ -13,5 +13,6 @@
     builtins.elem (pkg.pname or "") [
       "vscode"
       "discord"
+      "corefonts"
     ];
 }

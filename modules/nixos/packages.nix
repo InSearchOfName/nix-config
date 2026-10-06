@@ -15,6 +15,7 @@
     eza
     wireguard-tools
     gcc
+    gdb
     gnumake
     zig    
     SDL2   
@@ -22,8 +23,15 @@
     simple-scan
     sane-backends
     racket
+    gimp
 
     vscode
     discord
+  ];
+
+  fonts.enableDefaultPackages = true;
+  fonts.packages = with pkgs; [
+    corefonts
+    cascadia-code
   ];
 }
