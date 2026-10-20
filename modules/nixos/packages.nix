@@ -24,6 +24,7 @@
     sane-backends
     racket
     gimp
+    nodejs_latest
 
     vscode
     discord
