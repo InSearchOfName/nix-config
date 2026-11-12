@@ -8,6 +8,7 @@
     ../../modules/nixos/locale-time.nix
     ../../modules/nixos/desktop-gnome.nix
     ../../modules/nixos/hardware.nix
+    ../../modules/nixos/java-gl.nix
     ../../modules/nixos/networking.nix
     ../../modules/nixos/virtualisation.nix
     ../../modules/nixos/users.nix
