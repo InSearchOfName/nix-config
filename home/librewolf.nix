@@ -1,6 +1,21 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
+  # Default browser for GNOME / xdg-open
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "text/html" = "librewolf.desktop";
+      "x-scheme-handler/http" = "librewolf.desktop";
+      "x-scheme-handler/https" = "librewolf.desktop";
+      "x-scheme-handler/about" = "librewolf.desktop";
+      "x-scheme-handler/unknown" = "librewolf.desktop";
+      # Preserve handlers registered by other apps
+      "x-scheme-handler/claude-cli" = "claude-code-url-handler.desktop";
+      "x-scheme-handler/jetbrains" = "jetbrainsd.desktop";
+    };
+  };
+
   programs.firefox = {
     enable = true;
     package = pkgs.librewolf;
@@ -26,7 +41,7 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
         };
 
-        # Proton Pass (No solution for now) 
+        # Proton Pass (No solution for now)
         "78272b6fa58f4a1abaac99321d503a20@proton.me" = {
           installation_mode = "force_installed";
         };

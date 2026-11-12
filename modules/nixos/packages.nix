@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # Core utilities
     vim
     wget
     curl
@@ -14,20 +15,25 @@
     tree
     eza
     wireguard-tools
+
+    # Development
     gcc
     gdb
     gnumake
-    zig    
-    SDL2   
-    typst    
-    simple-scan
-    sane-backends
+    zig
+    SDL2
+    typst
     racket
-    gimp
     nodejs_latest
+    python3
+    python3Packages.virtualenv
 
+    # Desktop apps
     vscode
     discord
+    gimp
+    simple-scan
+    sane-backends
   ];
 
   fonts.enableDefaultPackages = true;
