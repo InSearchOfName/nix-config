@@ -3,6 +3,7 @@
 {
   imports = [
     ./git.nix
+    ./java.nix
     ./librewolf.nix
   ];
 
