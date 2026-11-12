@@ -24,6 +24,7 @@
     SDL2
     typst
     racket
+    jdk25
     nodejs_latest
     python3
     python3Packages.virtualenv
