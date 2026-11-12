@@ -18,7 +18,7 @@
   let
     unstable = import nixpkgs-unstable {
       system = "x86_64-linux";
-      config.allowUnfreePredicate = pkg: (pkg.pname or "") == "jetbrains-toolbox";
+      config.allowUnfreePredicate = pkg: builtins.elem (pkg.pname or "") [ "jetbrains-toolbox" "vscode" ];
     };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -34,6 +34,8 @@
             claude-code.packages.x86_64-linux.default
             # stable's jetbrains-toolbox tarball 404s upstream
             unstable.jetbrains-toolbox
+            # stable's vscode 1.144.0 fails to build (nixpkgs#584492)
+            unstable.vscode
           ];
         }
 

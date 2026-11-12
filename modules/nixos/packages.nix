@@ -29,7 +29,6 @@
     python3Packages.virtualenv
 
     # Desktop apps
-    vscode
     discord
     gimp
     simple-scan
